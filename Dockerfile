@@ -6,17 +6,17 @@ RUN yum -y install deltarpm \
     && yum -y update \
     && yum -y install net-tools htop \
 # JAVA
-    && wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz \
-    && tar -zxvf openjdk-11.0.2_linux-x64_bin.tar.gz \
-    && rm -Rf openjdk-11.0.2_linux-x64_bin.tar.gz \
-    && mv jdk-11.0.2 /usr/local/jdk \
+    && wget https://download.java.net/java/GA/jdk15.0.2/0d1cfde4252546c6931946de8db48ee2/7/GPL/openjdk-15.0.2_linux-x64_bin.tar.gz \
+    && tar -zxvf openjdk-15.0.2_linux-x64_bin.tar.gz \
+    && rm -Rf openjdk-15.0.2_linux-x64_bin.tar.gz \
+    && mv jdk-15.0.2 /usr/local/jdk \
     && update-alternatives --install "/usr/bin/java" "java" "/usr/local/jdk/bin/java" 1 \
     && yum clean all \
     && rm -rf /var/cache/yum 
 
 # Metadata params
 ARG BUILD_DATE
-ARG VERSION="v1.11.0.2"
+ARG VERSION="v1.15.0.2"
 ARG VCS_URL="https://github.com/scolagreco/centos-java.git"
 ARG VCS_REF
 

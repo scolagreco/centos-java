@@ -15,4 +15,4 @@ Passata a OpenJDK.
 ## Versions
 
 - CentOS 7 (ultima release)
-- Java openjdk-11.0.2
+- Java openjdk-15.0.2
