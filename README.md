@@ -7,11 +7,12 @@
 # Docker Image CentOS + Java
 
 Dockerfile per creare una Docker Image di CentOS base con Java (jdk e jre) installato.
+Passata a OpenJDK.
 
 ## Info
 
 
 ## Versions
 
-- CentOS 7
-- Java jdk1.8.0_201
+- CentOS 7 (ultima release)
+- Java openjdk-11.0.2
